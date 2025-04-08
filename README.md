@@ -10,3 +10,36 @@
 
    d. analyze_recall:
 	 This function will compare the recalled words with the original list, track recall accuracy by word position, and generate data for plotting a serial position curve.
+
+
+## Introduction
+
+This program shows how memory works using a common psychology effect called the Serial Position Effect. People usually remember the first and last items in a list better than the middle ones. This project helps show that effect in a simple word recall experiment.
+It uses a list of words, shows them to the user, and then asks them to recall as many as they can. The program collects the data and shows how well people remember based on where the words were in the list.
+
+Great for learning about memory. Easy to run. Fast results.
+
+## Functions
+
+- `generate_word_list(n, word_bank)`  
+  Picks `n` random words from a list.
+
+- `display_words(word_list)`  
+  Shows each word on the screen one by one.
+
+- `collect_recall()`  
+  Lets the user type in words they remember.
+
+- `analyze_recall(recalled, original)`  
+  Checks which words were remembered and shows results by word position.
+
+## Example Use
+
+- Teachers can use this to show how memory works.
+- Students can try it themselves to see how well they remember words.
+- Anyone interested in psychology can explore how recall works.
+
+## Input Data
+- The list of words shown to the user is stored in `config.py` as a predefined word bank.
+- The user does not need to provide any input files.
+- User responses (the words they recall) are collected during the experiment and stored separately by the program.
